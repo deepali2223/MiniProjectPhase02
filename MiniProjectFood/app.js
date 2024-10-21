@@ -43,6 +43,10 @@ app.get("/", (req, res) => {
     res.send("Hi I am Root");
 });
 
+//contact Page
+app.get('/contact', (req, res) => {
+    res.render('listings/contact', { title: 'Contact Us' }); 
+  });
 
 app.use(session(sessionOptions));
 app.use(flash());
